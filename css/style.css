@@ -1,0 +1,532 @@
+
+/*************************
+*******
+only for display sizing and 
+normalization, over-flow problem
+***************************
+******/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+*{ 
+/* related to floats / clear both,
+     it does the tricks */
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+/********************
+********************
+     Main styling starts  
+********************
+**********************/
+
+body{
+    /* background: #e3e3e3; */
+}
+.wrap{
+	width: 90%;
+	margin: 0 auto;
+}
+
+/*****************
+*************
+Header starts
+*************
+******************/
+body > .top-section{
+    background: #ccc;
+    height: 50px;
+    width: 100%;
+}
+
+body > .top-section > .wrap > ul{
+    list-style: none;
+    float: right;
+    margin: 15px 0px;
+    line-height: 1em;
+    color: #ffffff;
+    font-size: 14px;
+}
+body > .top-section > .wrap > ul li{
+    display: inline;
+    margin-left: 30px;
+}
+body > .top-section > .wrap > ul li a{text-decoration: none;color: #5f4040;text-shadow: 0px 0px 10px #fff;}
+body > .top-section > .wrap > ul li a:hover{    
+    color: #ffffff;        
+    transition: .7s;        
+    text-shadow: 1px 1px 10px #000;
+}
+body> .top-section > .wrap .call{
+    margin: 15px 0px;
+    float: left;
+    font-family: monospace;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+
+
+header{   
+    height: 80px;       
+    background: #0e0e0e;
+    overflow: hidden;
+}
+header >.wrap> .logo {
+    font-size: 30px;
+    font-family: roboto,cursive,san-sarif,monospace;
+    text-shadow: 2px 2px 1px #ccc;
+    color: #5e968c;
+    float: left;
+    line-height: 1em;
+    margin: 10px 0px 0px;
+    text-align: center;
+}
+header > .wrap  .u{
+    font-size: 20px;
+}
+header >.wrap> .menu{
+    float: right;
+    line-height: 1em;
+    margin: 10px 0px;
+}
+header >.wrap .menu > ul {
+    display: inline-flex;
+    list-style: none;    
+    padding: 0px;
+}
+header >.wrap >.menu > ul > li {
+    padding: 12px;
+    background: #d1d6de;
+    margin: 12px 0px;
+    margin-left: 15px;
+    border: 1px solid #7b7a82;
+    border-radius: 3px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1em;
+}
+
+///// work here ---- not working
+
+header >.wrap >.menu > ul:last-child {
+    margin-right: 0px;
+}
+
+header >.wrap >.menu > ul > li:hover {
+    background: #63b76a;
+    border: 1px solid #fff;
+    transition: .7s;
+}
+header >.wrap >.menu > ul > li > a {
+    color: #000;
+    text-decoration: none;
+}
+
+/*****************
+*************
+banner starts
+*************
+******************/
+
+.banner{
+    background: url(../img/banner.jpg)no-repeat;
+    height: 500px;
+    width: 100%;
+    background-size: 100%;
+    /* opacity: .6; */
+}
+/**
+.banner > img{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}*/
+body> .banner  h2{margin-left: 220px;padding-top: 120px;font-family: cursive;}
+
+body > .banner h1 {
+    padding: 0px 130px;
+    font-size: -webkit-xxx-large;
+    font-family: monospace;
+    color: #0e0e0e;
+    text-shadow: 2px 2px 5px #fff;
+}
+/*****************
+*************
+embad starts
+*************
+******************/
+.embadded-section{
+    height: 450px;
+    background: #e3e3e3;
+}
+.embadded-section > .wrap > h3{
+    text-align: center;
+    font-family: cursive;
+    padding: 20px;
+}
+.tab{   
+    font-family: sans-serif;
+    width: 382px;
+    float: left;
+    margin:0px 11px; 
+    z-index: 1;
+    box-shadow: 1px 1px 1px #e3e3e3;
+
+}
+.tab > a {
+  /* background: red; */
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0 2px 1px black;    
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #4c4c4c;
+    height: 0px;
+    display: inline-block;
+    line-height: 3.2;
+}
+.div{
+    border: 1px solid black;
+    /*padding: 20px;*/
+    border-top: 3px solid #4c4c4c;
+}
+iframe{
+    margin-bottom: -4px;
+}
+
+
+
+/*****************
+*************
+Footer starts
+*************
+******************/
+
+
+footer{
+    background: #2d2929;
+    color: #d8cccc;
+    height: 300px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #e6d9d9;
+}
+    
+/*for selecting all col-md inside footer*/
+
+footer  .col-md{ 
+    width:25%;
+    float: left;
+}
+footer .col-md h2{
+    font-size: 18px;
+    margin-top: 60px;
+    font-family: roboto,monospace,aral;
+    font-weight: 100;
+    line-height: 1em;
+}
+footer .col-md .line-dec{
+    width: 50px;
+    height: 1px;
+    background-color: #27d412;
+    margin: 20px 0px;
+}
+footer > .wrap >.col-md > .about  h1{
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+    text-shadow: 1px 1px 1px #04ff00;
+    color: #0437ef;
+    margin-top: 50px;
+    font-family: monospace;
+}
+footer >.wrap .col-md .links{padding: 0px 15px;padding-right: 85px;}
+footer > .wrap >.col-md > .about p{
+    padding: 0px 1px;
+    padding-right: 0px;
+}
+footer > .wrap .col-md .footer-ul{
+    float: left;
+    margin-left: 0px;
+    list-style-type: none;
+} 
+footer > .wrap .col-md .ul-right{
+    float: right;
+}
+footer > .wrap .col-md .links li{
+    line-height: 2em;
+    list-style: circle;
+}
+footer > .wrap .col-md li >a:hover{
+    color: #f9f9f9;
+    text-shadow: 1px 1px 1px #fff;
+    transition: .5s;
+}
+footer>.wrap .col-md .footer-address-ul{
+
+}
+footer>.wrap .col-md .featured-links li{
+    list-style: none;
+    margin: 20px 0px;
+}
+footer > .wrap .col-md > .newsletter input[placeholder]{
+    padding-left: 25px;
+}
+footer > .wrap .col-md > .newsletter input{
+    width: 100%;
+    height: 43px;
+    background: #564d4d;
+    outline: none;
+    line-height: 1em;
+    margin-top: 15px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+footer > .wrap .col-md > .newsletter input:focus{
+    border: 1px solid #148848;
+    transition: .3s;
+}
+footer > .wrap .col-md > .newsletter button{    
+    padding: 10px;    
+    width: 120px;    
+    background: #20770a;    
+    outline: none;
+}
+footer > .wrap .col-md > .newsletter button:hover{
+    background: #093980;
+    color: #e3e3e3;
+    transition: .9s;
+}
+footer > .wrap  hr{
+    height: 1px;
+    margin: 0px 0px;
+}
+
+.copyright-section{
+    
+    background: #2d2929;
+    
+}
+.copyright-section .copyright{
+    border-top: 1px solid #5f7b5a;
+    height: 100px;
+    width: 90%;
+    margin: 0 auto;
+}
+.copyright-section > .copyright >  .text{text-align: left;color: #9289af;margin: 20px 0px;}
+.copyright-section > .menu{
+
+}
+
+
+
+/*****************
+*************
+Contact Us page starts
+*************
+******************/
+.contact{
+    background: #e3e3e3;
+    overflow: hidden;
+    text-align: center;
+}
+.contact > .wrap h1{
+    text-align: center;
+    font-family: monospace;
+    margin: 20px;
+}
+.contact > .wrap
+.contact > .wrap .sub-text{
+    padding: 20px;
+    font-family: serif;
+}
+.contact > .wrap .contact-box{
+    margin: 20px 0px;
+}
+.contact > .wrap h3 {
+    padding: 20px;
+    font-family: monospace,serif;
+    font-size: 20px;
+}
+.contact > .wrap .left{
+    width: 32%;
+    background: #ccc;
+    padding: 10px;
+    margin: 0px 0px 0px 0px;
+    float: left;
+}
+.contact > .wrap .mid{
+    width: 32%;
+    background: #ccc;
+    padding: 10px;
+    margin: 0px 2% 0px;
+    float: left;
+}
+.contact > .wrap .right{
+    width: 32%;
+    background: #ccc;
+    padding: 10px;
+    margin: 0px 0px 0px 0px;
+    float: right;
+}
+.contact > .wrap .map,h1{
+    margin: 20px 0px;
+}
+
+
+/*****************
+*************
+Sign Up page starts
+*************
+******************/
+.container-reg {
+    margin: 0 auto;
+    width: 50%;
+    padding: 30px;
+    border: 1px solid #e3e3e3;
+    z-index: 1;
+    margin-top: 50px;
+}
+.container-reg input, input[type="text"]{
+    display: block;
+}
+.container-reg input[type="submit"] {
+    display: inline-block;
+    width: 100%;
+    height: 35px; 
+    margin-bottom: 10px;   
+}
+.container-reg h2{
+    text-align: center;
+}
+
+/*****************
+*************
+login page starts
+*************
+******************/
+#dialogue_box{
+    display: none;
+}
+.mask{
+    background: #fff;
+    opacity: .9;
+    height:100%;
+    width: 100%
+}
+.modal{
+    margin: 70px auto 30px auto;    
+    width: 60%;       
+}
+.modal {
+    margin: 70px auto 30px auto;
+    width: 60%;
+    position: fixed;
+    z-index: 1;
+    top: 60px;
+    left: 20%;    
+    box-sizing: border-box;    
+    overflow: auto;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,1.2); /* Black w/ opacity */
+    padding: 30px;
+    border: 1px solid #e3e3e3;
+    color: #fff;
+}
+
+.modal h3{
+    margin: 20px;
+    font-family: monospace;
+    font-size: 30px;
+}
+input[type="text"], input[type="password"] {
+    width: 100%;
+    display: inline-block;
+    padding: 12px;
+    background: #e3e3e3;    
+    border: none;
+    margin: 10px 0px;
+}
+
+.modal a {
+    float: right;
+    text-decoration: none;
+    line-height: 1em;    
+    color: #f19d9d;
+}
+.modal button {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    background: #36b734;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    font-family: monospace;
+    margin-top: 10px;
+}
+.modal .btn-x {
+    background: red;
+    border: 1px solid green;
+    cursor: pointer;
+    width: 70px;
+    padding: 0px;
+    margin: 8px 0px;
+}
+.modal .new-acc{
+    float: right;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
